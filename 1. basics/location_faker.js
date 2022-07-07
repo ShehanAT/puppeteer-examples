@@ -8,7 +8,7 @@ const puppeteer = require('puppeteer');
 
 (async () => {
   const browser = await puppeteer.launch()
-  const screenshotPath = 'location.png'
+  const screenshotPath = 'location2.png'
   const url = 'https://developers.google.com/maps/documentation/javascript/examples/map-geolocation'
 
   // Firstly, we need to override the permissions
@@ -28,7 +28,7 @@ const puppeteer = require('puppeteer');
             altitude: null,
             altitudeAccuracy: null,
             heading: null,
-            latitude: 0.62896,
+            latitude: 10.62896,
             longitude: 77.3111303,
             speed: null
           }

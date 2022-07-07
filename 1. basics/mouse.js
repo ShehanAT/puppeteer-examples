@@ -23,6 +23,6 @@ const puppeteer = require('puppeteer');
   await page.mouse.click(132, 103, { button: 'left' })
 
   // the screenshot should show feedback from the page that right part was clicked.
-  await page.screenshot({ path: 'mouse_click.png' })
+  await page.screenshot({ path: 'mouse_click2.png' })
   await browser.close()
 })()
