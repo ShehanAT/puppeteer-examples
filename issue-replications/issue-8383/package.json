@@ -1,0 +1,19 @@
+{
+    "name": "@upleveled/drone",
+    "version": "1.0.0",
+    "type": "module",
+    "devDependencies": {
+        "@types/puppeteer": "^5.4.6",
+        "typescript": "4.5.5"
+    },
+    "dependencies": {
+        "esbuild": "0.14.39",
+        "puppeteer": "^14.1.1",
+        "tsm": "2.2.1"
+    },
+    "scripts": {
+        "build": "esbuild index.ts --bundle --outfile=upleveled-drone.mjs --platform=node --target=node16.8 --format=esm --banner:js=\"import { createRequire as topLevelCreateRequire } from 'module'; const require = topLevelCreateRequire(import.meta.url);\"",
+        "dev": "tsm index.ts",
+        "start": "yarn build && node upleveled-drone.mjs"
+    }
+}
